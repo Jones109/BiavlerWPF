@@ -1,0 +1,29 @@
+﻿<Application x:Class="Biavler.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Biavler"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Key="InputStyle" TargetType="{x:Type Control}">
+            <Setter Property="FontSize" Value="12pt" />
+            <Setter Property="FontFamily" Value="Consolas" />
+            <Setter Property="BorderThickness" Value="3" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+        </Style>
+        <DataTemplate x:Key="entryTemplate">
+            <WrapPanel>
+                <TextBlock Text="{Binding Path=BistadeId}" Padding="5, 0" 
+                           Width="75" 
+                />
+                <TextBlock Text="{Binding Path=DatoTid, StringFormat=dd-MM-yyyy}" Padding="5, 0"
+                           Width="100"
+                />
+                <TextBlock Text="{Binding Path=AntalMider}" Padding="5, 0" 
+                           Width="75" 
+                />
+                <TextBlock Text="{Binding Path=Bemærkninger}" Padding="5, 0"
+                />
+            </WrapPanel>
+        </DataTemplate>
+    </Application.Resources>
+</Application>

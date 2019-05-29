@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BiavlerWPF.Properties
+namespace Biavler.Properties
 {
 
 
